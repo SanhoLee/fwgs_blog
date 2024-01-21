@@ -8,21 +8,21 @@ commonmark:
   options: ["FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table"]
 ---
-# 1. Commands
+## Commands
 
 
 
-# Set up
+## Set up
 - `bundle install` | install dependencies which are configurd in Gemfile ?
 - `bundle exec jekyll serve` | Run server with dependancy modules.
 - `bundle exec jekyll build` |
 - `jekyll serve` | run local server...
-    - options :
-        - `--draft` : render postings located in `_drafts` directory.
+- options :
+  + `--draft` : rendering md files located in `_drafts` directory.
 
 
 
-# Pages
+## Pages
 
 - how to make a page :
     1. create md file on root directory.(but you could move this file any directory, and that dir name would be included when you access the page, router concept.)
@@ -36,19 +36,19 @@ commonmark:
 
 
 
-# 2. Files
+## Files and Directories
 - Gemfile |
 - _config.yml |
 - _posts (dir) |
 
 
-# Hosting through github
-1. set baseurl as github repo name.
-2. create a repo in github and sync
+## Hosting through github
+  ### set baseurl as github repo name.
+  ### create a repo in github and sync
   1. `git init`
-  2. `git checkout -b gh-pages(<=branch name)` | checkout with a branch named as 'gh-pages'
-  3. `git status` | checking git status
-  4. `git add` | adding all files which are untracked yet.
-  5. `git commit -m "initial commit"` | Do first commit.
-  6. `git remote add origin  (git repo address)`| linking a repository which is made for hosting this blog.
-  7. `git push origin gh-pages(<=branch name)` | push all files which is committed by user.
+  2. `git checkout -b gh-pages(<=branch name)` : checkout with a branch named as 'gh-pages'
+  3. `git status` : checking git status
+  4. `git add` : adding all files which are untracked yet.
+  5. `git commit -m "initial commit"` : Do first commit.
+  6. `git remote add origin  (git repo address)`: linking a repository which is made for hosting this blog.
+  7. `git push origin gh-pages(branch name)` : push all files which is committed by user.
