@@ -8,11 +8,8 @@ commonmark:
   options: ["FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table"]
 ---
-## Commands
 
-
-
-## Set up
+## Commands(Set up)
 - `bundle install` | install dependencies which are configurd in Gemfile ?
 - `bundle exec jekyll serve` | Run server with dependancy modules.
 - `bundle exec jekyll build` |
@@ -37,18 +34,23 @@ commonmark:
 
 
 ## Files and Directories
-- Gemfile |
-- _config.yml |
-- _posts (dir) |
+Gemfile :
+necessary dependency modules for production could be defined.
+
+_config.yml :
+theme, baseurl, plugins, extenstions and etc., a lot of specific configuration setting could be made with this file.
+
+_posts (dir) :
+where posting files are located.
 
 
 ## Hosting through github
-  ### set baseurl as github repo name.
-  ### create a repo in github and sync
-  1. `git init`
-  2. `git checkout -b gh-pages(<=branch name)` : checkout with a branch named as 'gh-pages'
-  3. `git status` : checking git status
-  4. `git add` : adding all files which are untracked yet.
-  5. `git commit -m "initial commit"` : Do first commit.
-  6. `git remote add origin  (git repo address)`: linking a repository which is made for hosting this blog.
-  7. `git push origin gh-pages(branch name)` : push all files which is committed by user.
+### set baseurl as github repo name.
+### create a repo in github and sync.
+1. `git init`
+2. `git checkout -b gh-pages(<=branch name)` : checkout with a branch named as 'gh-pages'
+3. `git status` : checking git status
+4. `git add` : adding all files which are untracked yet.
+5. `git commit -m "initial commit"` : Do first commit.
+6. `git remote add origin  (git repo address)`: linking a repository which is made for hosting this blog.
+7. `git push origin gh-pages(branch name)` : push all files which is committed by user.
