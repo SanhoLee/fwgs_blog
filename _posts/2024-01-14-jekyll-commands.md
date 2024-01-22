@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll commands and configuration files"
+title:  "Jekyll commands and configuration files to build my first blog."
 date:   2024-01-14 11:50:33 +0900
 categories: jekyll update
 permalink: 
@@ -8,21 +8,22 @@ commonmark:
   options: ["FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table"]
 ---
+I'm going to summarize several important contents when I set-up static web pages by Jekyll and Github pages. Actually I was really suprised that it's so easy to make and deploy this blog with github built-in services, Github pages. and Here are [jekyll's getting-started page](https://jekyllrb.com/docs/) and [chirpy theme guide](https://chirpy.cotes.page/posts/getting-started/) what I refered to. Yeah, Try make your own blog too, if you want.
+
+On this post, I'd like to leave several important memos which I have used when I make this blog.
 
 ## Commands(Set up)
-- `bundle install` | install dependencies which are configurd in Gemfile ?
-- `bundle exec jekyll serve` | Run server with dependancy modules.
-- `bundle exec jekyll build` |
-- `jekyll serve` | run local server...
+- `bundle install`: install dependencies which are configurd in Gemfile ?
+- `bundle exec jekyll serve` : Run server with dependancy modules.
+- `bundle exec jekyll build` :
+- `jekyll serve` : run local server...
 - options :
   + `--draft` : rendering md files located in `_drafts` directory.
 
+## Posts
 
-
-## Pages
-
-- how to make a page :
-    1. create md file on root directory.(but you could move this file any directory, and that dir name would be included when you access the page, router concept.)
+- How to make a Post :
+    1. create md file on `_posts` directory. And any file could be moved to any directory. That directony name would be included when you access the page, and You could check url address of each page has hieracchy structure.
     2. make layout as "page" in frontmatter
 
 # Permalinks : permanant link or URL of a page.
@@ -30,22 +31,23 @@ commonmark:
 - Use variables defined in frontmatter, try this -->  `permalink: /:day/:year/:title.hello-World`
 - In order to use a variable, try this --> `/:(variable name)`
 
-
-
-
 ## Files and Directories
-Gemfile :
-necessary dependency modules for production could be defined.
 
-_config.yml :
-theme, baseurl, plugins, extenstions and etc., a lot of specific configuration setting could be made with this file.
+Gemfile 
+: necessary dependency modules for production could be defined.
 
-_posts (dir) :
-where posting files are located.
+_config.yml 
+: theme, baseurl, plugins, extenstions and etc., a lot of specific configuration setting could be made with this file.
+
+_posts (dir) 
+: where posting files are located.
 
 
 ## Hosting through github
-### set baseurl as github repo name.
+### Set baseurl as github repo name.
+- The base URL of your site in `_config.yml`
+- Fill in baseurl field with your repository name, just like `baseurl: "/repo_name"`
+
 ### create a repo in github and sync.
 1. `git init`
 2. `git checkout -b gh-pages(<=branch name)` : checkout with a branch named as 'gh-pages'
