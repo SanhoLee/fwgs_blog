@@ -16,7 +16,7 @@ While studying OpenCV, I received a request from my company for a data processin
 
 However, there are certain parts that regular users have to use, so I had to design the GUI. Most of the available blogs or tutorials out there focused mainly on handling images in a console format, and there was actually a lack of information on developing applications for general users who have no knowledge of image processing.
 
-After searching for a few examples, it was found that the main languages that can be used with the OpenCV library are indeed C++ and Python, and C# is also supported. Fortunately, C# has the advantage of being a .NET language, allowing the use of Windows Forms. It was also discovered that there is a dedicated library called OpenCvSharp. 
+After searching for a few examples, it was found that the main languages that can be used with the OpenCV library are indeed C++ and Python, and C# is also supported. Fortunately, C# has the advantage of being a .NET language, allowing the use of Window Forms. It was also discovered that there is a dedicated library called OpenCvSharp. 
 
  [GitHub - shimat/opencvsharp: OpenCV wrapper for .NET](https://github.com/shimat/opencvsharp)
 
@@ -75,7 +75,7 @@ As a pastime, I checked the trends. It seems like I should search and think more
 2) Calculate CannyEdge functionality🧮
 
 -   The user can configure the parameters required for the calculation of the canny edge.
--   You can update each parameter using a separate Windows form.
+-   You can update each parameter using a separate Window form.
 -   Changeable parameters : 
     1.  Kernel size k for Gaussian Blur (setting the row and column sizes to be the same)
     2.  The low and high threshold values of CannyEdge
@@ -83,7 +83,7 @@ As a pastime, I checked the trends. It seems like I should search and think more
 ![4](4.png)
 _Setting CannyEdge Parameters_
 
-## **Structure of a Windows form (entry, main)📃**
+## **Structure of a Window form (entry, main)📃**
 
 -   entry form
 -   caseA form(main form)
