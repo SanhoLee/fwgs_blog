@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Jekyll commands and configuration files to build my first blog."
-date:   2024-01-14 11:50:33 +0900
-categories: jekyll update
-permalink: 
+title: "Jekyll commands and configuration files to build my first blog."
+date: 2024-01-14 11:50:33 +0900
+categories: notes jekyll
+permalink: /:year/:month/:title
 commonmark:
   options: ["FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table"]
@@ -13,7 +13,7 @@ I'm going to summarize several important contents when I set-up static web pages
 On this post, I'd like to leave several important memos which I have used when I make this blog.
 
 ## Commands(Set up)
-- `bundle install`: install dependencies which are configurd in Gemfile ?
+- `bundle install`: install dependencies which are configurd in Gemfile
 - `bundle exec jekyll serve` : Run server with dependancy modules.
 - `bundle exec jekyll build` :
 - `jekyll serve` : run local server...
@@ -26,7 +26,7 @@ On this post, I'd like to leave several important memos which I have used when I
     1. create md file on `_posts` directory. And any file could be moved to any directory. That directony name would be included when you access the page, and You could check url address of each page has hieracchy structure.
     2. make layout as "page" in frontmatter
 
-# Permalinks : permanant link or URL of a page.
+## Permalinks : permanant link or URL of a page.
 - Write `permalink: "/my-new-url/"` on frontmatter, Permalink is used primaliry over field of `categories`.
 - Use variables defined in frontmatter, try this -->  `permalink: /:day/:year/:title.hello-World`
 - In order to use a variable, try this --> `/:(variable name)`
