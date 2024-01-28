@@ -119,7 +119,11 @@ paginate: 10
 # The base URL of your site
 baseurl: "/fwgs_blog"
 
-markdown: CommonMark
+# markdown: CommonMark
+markdown: 
+# commonmark:
+#   options: ["FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]
 
 plugins:
   - jekyll-target-blank

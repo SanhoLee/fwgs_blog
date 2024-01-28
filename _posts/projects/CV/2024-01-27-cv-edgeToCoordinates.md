@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  "Coordinates Drawer with conventional computer vision image processing."
+title:  "Coordinates Drawer by image processing."
 date:   2024-01-27 11:50:33 +0900
 categories: Project CV
 permalink: /:year/:month/:title
 img_path: /imgs/20240127/
-commonmark:
-  options: ["FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
 ---
 
 ## **Prologue🤔**
@@ -18,11 +15,11 @@ However, there are certain parts that regular users have to use, so I had to des
 
 After searching for a few examples, it was found that the main languages that can be used with the OpenCV library are indeed C++ and Python, and C# is also supported. Fortunately, C# has the advantage of being a .NET language, allowing the use of Window Forms. It was also discovered that there is a dedicated library called OpenCvSharp. 
 
- [GitHub - shimat/opencvsharp: OpenCV wrapper for .NET](https://github.com/shimat/opencvsharp)
+ [GitHub - shimat/opencvsharp: OpenCV wrapper for .NET][1]
 
 There is a platform called emguCV that allows development in a slightly wider range of languages. However, I found it a bit difficult to use, so I didn't pursue it. If given the opportunity, it would be interesting to take a closer look at how to develop using C++ (though that may be a future endeavor).
 
- [emgucv - computer vision technology company focused on providing industry leading software to solve real world problems.](https://github.com/emgucv)
+ [emgucv - computer vision technology company focused on providing industry leading software to solve real world problems.][2]
 
 I have concluded that if you need to write a program that is simple yet fast, using C# is sufficient. And, out of the blue, I compared the trends of the two mentioned platforms using Google Trends search.
 
@@ -67,7 +64,7 @@ As a pastime, I checked the trends. It seems like I should search and think more
 
 1) Mouse event functionality🖱️
 
--   Edit the image using the user's mouse input.(How to use a callback function is **[here](https://fwanggu-lee.tistory.com/48)**)
+-   Edit the image using the user's mouse input.(How to use a callback function is **[here][3]**)
 -   Crop Function: Select the top left and bottom right corners to crop the working area (2 Points)
 -   Noise Masking Function: Select points in a clockwise or counterclockwise direction to define the masking area of a polygon. (4 points)
 -   Common rule: To confirm and process the selected area, click the middle button of the mouse (the color of the selected element will change), and then press the space bar (a message box will pop up to determine if the process should proceed).
@@ -95,7 +92,7 @@ _Form of entry (entry form)_
 ![6](6.png)
 _Form of caseA (main form)_
 
-#### _**[Details of the code(Github) ⚙️](https://github.com/SanhoLee/IMGPROCAPP_WINDESKTOP)**_
+#### _**[Details of the code(Github) ⚙️][4]**_
 
 ## **Something I want to try next time.🚀**
 
@@ -104,3 +101,9 @@ While studying image processing and computer vision, I understood how it works w
 Through developing a desktop application to some extent, I was able to understand the underlying principles of the bigger picture. By utilizing this experience to the fullest, I am now considering shifting my development focus towards creating web-based applications. I believe that this direction not only allows for connectivity with a diverse range of users but also significantly enhances practical usability. (Whether it's a web app or a mobile app...)
 
 In summary, one objective is to develop a computer vision application that operates on the web. Secondly, it seems like I aim to utilize algorithms using machine learning, rather than simple image processing, within the scope of computer vision. Among them, It would be good to consider how to integrate well-known algorithms such as YOLO (Object Detection and Classification) and Unet (Semantic Segmentation) into an application. Let's go for it!
+
+
+[1]: https://github.com/shimat/opencvsharp
+[2]: https://github.com/emgucv
+[3]: https://fwanggu-lee.tistory.com/48
+[4]: https://github.com/SanhoLee/IMGPROCAPP_WINDESKTOP
