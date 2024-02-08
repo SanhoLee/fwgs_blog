@@ -4,7 +4,7 @@ title:  "Coordinates Drawer by image processing."
 date:   2024-01-27 11:50:33 +0900
 categories: Project CV
 permalink: /:year/:month/:title
-img_path: /imgs/20240127/
+img_path: /imgs/pjt/cv/202401/
 ---
 
 ## **Prologue🤔**

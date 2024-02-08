@@ -4,7 +4,7 @@ title: "Basic requirments to work in Embedded development world."
 date: 2024-02-07 12:00:10 +0900
 categories: notes embedded
 permalink: /:year/:month/:title
-img_path: /imgs/202402/embedded/
+img_path: /imgs/ebd/202402/
 ---
 
 ## Basic requirments to work in Embedded development world.(By rank)
