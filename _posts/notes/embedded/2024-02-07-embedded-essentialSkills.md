@@ -7,34 +7,72 @@ permalink: /:year/:month/:title
 img_path: /imgs/ebd/202402/
 ---
 
-## Basic requirments to work in Embedded development world.(By rank)
-- C language(0)
-- 데이터 시트 읽는 능력(1)
-    - gpio(general-purpose input/output)
-    - pwm(pulse width modulation)
-        - make it like analog signals by differentiating ratio(duration time) of digital signals(high and low). 
-        - Human eye cannot recognize whether it blinks or not if the frequency is over 100 Hz.
-        - Duty Cycle : time ratio of high and low signals, (duration time of high signal)/(duration time of low signal) 
-        ![1](DutyCycle.jpg)
-        _concept of duty cycle._
-        - It enables such like analog-output signal control by digital-output signals.
-        - Motor control could be one example, if duty ratio is going to high, velocity will be faster.
+## C language(0)
 
-    - i2c, spi
-        - i2c : 
-        - spi : 
-    > 유투브 검색해서 개념을 익히고, 데이터 시트를 다시 볼 것!
-- 회로도 해석 능력(2)
-- ARM 코어 구조(3)
-- 하드웨어 디버깅 능력(2) (GPIO 제어 능력)
+## 데이터 시트 읽는 능력(1)
+- gpio(general-purpose input/output)
+- pwm(pulse width modulation)
+- make it like analog signals by differentiating ratio(duration time) of digital signals(high and low). 
+- Human eye cannot recognize whether it blinks or not if the frequency is over 100 Hz.
+- Duty Cycle : time ratio of high and low signals, (duration time of high signal)/(duration time of low signal)
+
+![1](DutyCycle.jpg)
+ _concept of duty cycle._
+
+- It enables such like analog-output signal control by digital-output signals.
+- Motor control could be one example, if duty ratio is going to high, velocity will be faster.
+
+### About and differences of i2c, spi, uart communications
+
+#### 1. i2c(inter integrated circuit) : 
+- Half duplex mode, synchronous, low speed.
+- 100 kbpz(standard)
+- It consists of 2 eletrical lines, 
+    - SCL(Serial Clock) : carries clock signal
+    - SDA(Serial Data) : allosw master and slave to send and recieve data.
+
+![i2c](I2C-layout.png)
+_i2c_
+
+#### 2. spi(serial peripheral interface) : 
+- Full duplex mode, synchronous, high speed.
+- 250 Mbps @ .1m
+- It has 4 lines. 
+    - MOSI(Master Out, Slave In)
+    - MISO(Master In Slave Out)
+    - SCKL(Serial Clock)
+    - SS(Slave Select)
+
+![spi](SPI-bus.png)
+_spi_
+
+#### 3. uart : Universal Asynchronous Reception and Transmission
+- full duplex mode, asynchronous
+- 20 kbps @ 15m	
+- uses 2 wires(Tx, Rx)
+
+![uart](uart.png)
+_uart_
+
+reference : https://www.nextpcb.com/blog/spi-i2c-uart
+
+### 회로도 해석 능력(2)
+
+### ARM 코어 구조(3)
+
+### 하드웨어 디버깅 능력(2) (GPIO 제어 능력)
     - 오실로스코프 사용 방법(1)
     - 테스터기 사용방법(1)
-- 전기 기본 상식
+
+### - 전기 기본 상식
     - 교류/직류 개념(인버터, 컨버터)
     - 그라운드 개념
-- 운영체제가 있는 임베디드
-- free RTOS(취향에 따라 4순위 정도)
-- 리눅스
+
+### 운영체제가 있는 임베디드
+
+### free RTOS(취향에 따라 4순위 정도)
+
+### 리눅스
     - 컴파일 방법, gcc 사용법(1)
     - 크로스 컴파일 개념(1)
     - makefile 작성방법(1)
