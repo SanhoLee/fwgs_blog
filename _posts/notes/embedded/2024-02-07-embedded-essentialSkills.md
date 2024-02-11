@@ -26,7 +26,7 @@ img_path: /imgs/ebd/202402/
 
 #### 1. i2c(inter integrated circuit) : 
 - Half duplex mode, synchronous, low speed.
-- 100 kbpz(standard)
+- 100 kbps(standard)
 - It consists of 2 eletrical lines, 
     - SCL(Serial Clock) : carries clock signal
     - SDA(Serial Data) : allosw master and slave to send and recieve data.
@@ -54,38 +54,39 @@ _spi_
 ![uart](uart.png)
 _uart_
 
-reference : https://www.nextpcb.com/blog/spi-i2c-uart
+reference : *[https://www.nextpcb.com/blog/spi-i2c-uart](https://www.nextpcb.com/blog/spi-i2c-uart)*
+
+---
 
 ### 회로도 해석 능력(2)
 
 ### ARM 코어 구조(3)
 
 ### 하드웨어 디버깅 능력(2) (GPIO 제어 능력)
-    - 오실로스코프 사용 방법(1)
-    - 테스터기 사용방법(1)
+- 오실로스코프 사용 방법(1)
+- 테스터기 사용방법(1)
 
-### - 전기 기본 상식
-    - 교류/직류 개념(인버터, 컨버터)
-    - 그라운드 개념
+### 전기 기본 상식
+- 교류/직류 개념(인버터, 컨버터)
+- 그라운드 개념
 
 ### 운영체제가 있는 임베디드
 
 ### free RTOS(취향에 따라 4순위 정도)
 
 ### 리눅스
-    - 컴파일 방법, gcc 사용법(1)
-    - 크로스 컴파일 개념(1)
-    - makefile 작성방법(1)
-    - 라이브러리 작성방법(2)
-    - 드라이버 구현 방법(1)
-    - 커널 컴파일 방법(1)
-    - 커널 포팅 방법(1)
-    - vi edit 쓰는 방법(3)
-    - gdb 쓰는 방법(4)
-    - path 설정방법(2)
-    - tcp, socket 통신 구현(1)
-    - 시리얼 통신 구현(1)
-
+- 컴파일 방법, gcc 사용법(1)
+- 크로스 컴파일 개념(1)
+- makefile 작성방법(1)
+- 라이브러리 작성방법(2)
+- 드라이버 구현 방법(1)
+- 커널 컴파일 방법(1)
+- 커널 포팅 방법(1)
+- vi edit 쓰는 방법(3)
+- gdb 쓰는 방법(4)
+- path 설정방법(2)
+- tcp, socket 통신 구현(1)
+- 시리얼 통신 구현(1)
 
 ## Reference 
 From `OJ Tube`
