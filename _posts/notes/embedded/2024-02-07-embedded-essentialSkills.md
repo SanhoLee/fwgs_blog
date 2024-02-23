@@ -12,15 +12,14 @@ img_path: /imgs/ebd/202402/
 ## 데이터 시트 읽는 능력(1)
 - gpio(general-purpose input/output)
 - pwm(pulse width modulation)
-- make it like analog signals by differentiating ratio(duration time) of digital signals(high and low). 
-- Human eye cannot recognize whether it blinks or not if the frequency is over 100 Hz.
-- Duty Cycle : time ratio of high and low signals, (duration time of high signal)/(duration time of low signal)
+    - make it like analog signals by differentiating ratio(duration time) of digital signals(high and low). 
+    - Human eye cannot recognize whether LED lamp blinks or not if the frequency is over 100 Hz.
+    - Duty Cycle : time ratio of high and low signals, (duration time of high signal)/(duration time of low signal) 
+    - It enables such like analog-output signal control by digital-output signals.
+    - Motor control could be one example, if duty ratio is going to high, velocity will be faster.
 
 ![1](DutyCycle.jpg)
  _concept of duty cycle._
-
-- It enables such like analog-output signal control by digital-output signals.
-- Motor control could be one example, if duty ratio is going to high, velocity will be faster.
 
 ### About and differences of i2c, spi, uart communications
 
@@ -66,9 +65,10 @@ reference : *[https://www.nextpcb.com/blog/spi-i2c-uart](https://www.nextpcb.com
 - 오실로스코프 사용 방법(1)
 - 테스터기 사용방법(1)
 
-### 전기 기본 상식
-- 교류/직류 개념(인버터, 컨버터)
-- 그라운드 개념
+### Basic knowledge about electricity.
+- DC(Direct Current)/AC(Alternating Current)
+- Inverter, Converter
+- What is Ground in eletricity?
 
 ### 운영체제가 있는 임베디드
 

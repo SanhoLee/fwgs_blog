@@ -4,8 +4,23 @@ title:  "Coordinates Drawer by image processing."
 date:   2024-01-27 11:50:33 +0900
 categories: Project CV
 permalink: /:year/:month/:title
-img_path: /imgs/pjt/cv/202401/
+img_path: /imgs/pjt/cv/edgeToCoordinates/
 ---
+
+## Preview 
+
+**Overall appearance and potential usage.**
+![overallAppearance](overall_appearance_and_result.png)
+
+
+**Available  mouseEvent - cutting img**
+![mouse_imgCut](mouseEvent_imgCut.gif)
+_cutting img by selecting 2 points rectangle-shape of ROI_
+
+**Available  mouseEvent - masking img**
+![mouse_imgMask](mouseEvent_imgMask.gif)
+_masking specific area by selecting points_
+
 
 ## **Prologue🤔**
 
