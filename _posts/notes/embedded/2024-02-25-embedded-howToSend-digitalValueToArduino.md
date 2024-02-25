@@ -2,12 +2,13 @@
 layout: post
 title: "How to send Digital Value To Arduino"
 date: 2024-02-25 12:00:10 +0900
-categories: notes embedded
+categories: [notes, embedded]
+tags: [howToX, arduino]
 permalink: /:year/:month/:title
 img_path: /imgs/ebd/202402/
 ---
 
-## About
+## **About**
 It is about how to send digital values to arduino. I was searching the way how to utilize arduino uno as a example of computer vision. And I could find several examples, such like face tracker and lane follower with wheels and etc. 
 
 Among many of those, I thought `cvzone` library and its use-case example was useful to practice computer vision handling, there is even a youtube tutorial. So, I tryied to follow how to implement and how to use it. 
@@ -16,12 +17,12 @@ In that tutorial, I could learn and know the way of how computer vision techniqu
 
 For exampls, if the human face is detectted on camera image, I can make a logic to send positive signal(1) to arudino and it recieves the signal and use it to light up a LED lamp accourdingly. This is all the idea and concept that arduino can do.
 
-## Concept Diagram.
+## **Concept Diagram**
 ![concept of data exchange](data_exchange.png)
 _concept of data exchange between Processing PC and the arduiono._
 
 
-## Computer Vision Processing and Sending the signal from external PC
+## **Computer Vision Processing and Sending the signal from external PC**
 
 ```python
 import cv2
@@ -49,9 +50,18 @@ while True:
         break
 
 ```
+**FaceDetector**
+- `FaceDetector` use light weight model of `mediapipe` to detect real time face object.
+-  Capsulated in `FaceDetectionModule.py` file
+
+**SerialObject**
+- Basically it works by `serial` module, and it can be install by enterng [`pip install pyserial`](https://pyserial.readthedocs.io/en/latest/index.html).
+- 2 methods are provided, 
+  - `sendData(self, data)` to the serial device.
+  - `getData(data)` from the serial device.
 
 
-## Recieving digital signal as input from Arduino.
+## **Recieving digital signal as input from Arduino.**
 
 ```c
 // ino file
@@ -80,8 +90,14 @@ void loop() {
   delay(300);
 }
 ```
+**SerialData**
+- It also has 2 methods to communicate with external PC
+    - `void Send(int sendVals[])` : send the data to external PC
+    - `void Get(int* valsRec)` : get the data from the PC
 
-## Working like this.
+I've got noticed that there are each paired methods between the device and the PC, to enable serial communication.
+
+## **Working like this 🚀**
 
 >Once a face is detected, It turns green LED on. Else, Red LED on.
 {: .prompt-tip }
@@ -89,5 +105,5 @@ void loop() {
 ![faceDetect with arduino](0225_faceDetect_withARD.gif)
 
 
-## Reference
+## **Reference**
 [Computer Vision With Arduino | 2 Hour Course | OpenCV Python](https://youtu.be/mfiRJ1qgToc?si=7wzN8Gc_ffSY-miZ)

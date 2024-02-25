@@ -2,7 +2,8 @@
 layout: post
 title: "How to set local Environment with Python"
 date: 2024-02-06 12:00:10 +0900
-categories: notes python
+categories: [notes, python]
+tags: [howToX, python]
 permalink: /:year/:month/:title
 ---
 
