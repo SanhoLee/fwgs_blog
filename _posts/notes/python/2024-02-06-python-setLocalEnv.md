@@ -13,7 +13,7 @@ I don't remember what it was exactly..But it was really difficult and tiredsome 
 
 ## How to set
 ### 1. Make and set venv file system trees.
-```python
+```Script
 python -m venv "mylocalEnv"
 ```
 
@@ -27,3 +27,17 @@ python -m venv "mylocalEnv"
     
 1. Fill out library list which needs to be install in local environment.
 2. Run this command : `pip install -r requirements.txt`
+
+### 4. Save and Remove all libraries in my virtual environment.
+1. Save installed all libraries into `requirements.txt`.
+```Script
+pip freeze > requirements.txt
+```
+2. Remove all libraries by refering `requirements.txt` file.
+```Script
+// option1
+pip uninstall -r requirements.txt 
+
+// option2
+pip uninstall -r requirements.txt -y
+```
