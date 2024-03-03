@@ -13,7 +13,7 @@ I don't remember what it was exactly..But it was really difficult and tiredsome 
 
 ## How to set
 ### 1. Make and set venv file system trees.
-```Script
+```shell
 python -m venv "mylocalEnv"
 ```
 
@@ -30,14 +30,13 @@ python -m venv "mylocalEnv"
 
 ### 4. Save and Remove all libraries in my virtual environment.
 1. Save installed all libraries into `requirements.txt`.
-```Script
+```shell
 pip freeze > requirements.txt
 ```
 2. Remove all libraries by refering `requirements.txt` file.
-```Script
-// option1
+```shell
+# option1
 pip uninstall -r requirements.txt 
-
-// option2
+# option2
 pip uninstall -r requirements.txt -y
 ```
